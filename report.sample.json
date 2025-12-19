@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2025-01-01T12:00:00Z",
+  "timeZone": "America/Los_Angeles",
+  "device": {
+    "status": { "state": "ok" },
+    "payload": {
+      "macOSVersion": "macOS 14.2",
+      "buildVersion": "23C64",
+      "model": "MacBookPro18,3",
+      "architecture": "Apple Silicon (arm64)",
+      "uptime": 86400,
+      "hostName": "example-mac.local",
+      "currentUser": "demo",
+      "activeUsers": ["demo"]
+    }
+  },
+  "hardware": {
+    "status": { "state": "ok" },
+    "payload": {
+      "cpu": { "physicalCores": 8, "logicalCores": 10, "loadAverage": [1.23, 1.05, 0.98] },
+      "memory": { "total": 17179869184, "free": 2147483648, "used": 15032385536 },
+      "disk": { "total": 500000000000, "free": 250000000000, "mountPoints": ["/"] },
+      "battery": { "percentage": 87.0, "isCharging": true, "cycleCount": 110 },
+      "networkInterfaces": [ { "name": "en0", "address": "192.168.1.10", "type": "IPv4" } ]
+    }
+  },
+  "runningApps": {
+    "status": { "state": "ok" },
+    "payload": [ { "name": "Finder", "bundleId": "com.apple.finder", "pid": 123, "path": "/System/Library/CoreServices/Finder.app", "isActive": true, "isHidden": false, "kind": "uiApp" } ]
+  },
+  "runningProcesses": {
+    "status": { "state": "ok" },
+    "payload": [ { "pid": 1, "command": "launchd", "arguments": "", "uid": 0, "parentPid": 0 } ]
+  },
+  "permissions": {
+    "status": { "state": "ok" },
+    "payload": [ { "kind": "Screen Recording", "isAuthorized": false, "explanation": "Required to capture screen for diagnostics.", "requestable": true } ]
+  },
+  "remoteServices": {
+    "status": { "state": "ok" },
+    "payload": [ { "name": "Remote Login (SSH)", "isEnabled": false } ]
+  },
+  "listeningPorts": {
+    "status": { "state": "partial", "errorMessage": "requires administrator privileges or no ports" },
+    "payload": []
+  },
+  "displays": {
+    "status": { "state": "ok" },
+    "payload": [ { "id": 1, "resolution": "3024x1964", "refreshRate": 120 } ]
+  },
+  "risk": {
+    "riskScore": 0,
+    "riskReasons": [],
+    "suspiciousApps": [],
+    "suspiciousProcesses": []
+  },
+  "timeline": []
+}
